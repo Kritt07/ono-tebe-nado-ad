@@ -1,1 +1,76 @@
 /* место для вашего кода */
+
+.container {
+    padding: 0 50px;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    align-items: center;
+    justify-items: center;
+
+    height: 293px;
+    padding: 0 50px;
+}
+
+.header__menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__dot {
+    width: 6px;
+    height: 6px;
+}
+
+.header__link {
+    font-size: 18px;
+}
+
+.header__logo {
+    width: 148px;
+    height: 105px;
+    margin: 0 184px 0 36px;
+}
+
+.header__contacts {
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+}
+
+.header__contacts-link {
+    font-size: 18px;
+    line-height: 24.3px;
+    text-decoration: none;
+}
+
+.footer {
+    padding: 92px 50px 96px 51px;
+}
+
+.preview {
+    background-image: url(../images/cover.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 180px 24px 60px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 757px;
+}
+
+.lots {
+    padding: 180px 24px 60px;
+}
+
+.about {
+    padding: 60px 24px 180px;
+}
