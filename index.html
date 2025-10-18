@@ -10,15 +10,17 @@
     <link rel="stylesheet" href="fonts/fonts.css" />
   </head>
   <body>
-    <header class="container header">
+    <header class="header">
       <nav class="header__menu">
-        <a class="header__link" href="">главная</a>
-        <img class="header__dot" src="./images/list_marker.svg" alt="">
-        <a class="header__link" href="">посмотреть лоты</a>
-        <img class="header__dot" src="./images/list_marker.svg" alt="">
-        <a class="header__link" href="">об аукционе</a>
+        <ul class="header__menu">
+          <li class="header__menu-link"><a>главная</a></li>
+          <li class="header__menu-link link-dot"><a>посмотреть лоты</a></li>
+          <li class="header__menu-link link-dot"><a>об аукционе</a></li>
+        </ul>
       </nav>
-      <a class="header__logo" href="#0"></a>
+      <a class="header__logo">
+        <img src="./images/logo-black.svg" alt="Логотип" />
+      </a>
       <address class="header__contacts">
         <a class="header__contacts-link" href="tel:+9995555555">+9 999 555 5555</a>
         <a class="header__contacts-link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
@@ -26,16 +28,17 @@
       </address>
     </header>
     <main class="main">
-      <section class="container preview">
-        <h1>
-          <span>оно</span>
-          <span>тебе</span>
-          <span>надо</span>
+      <section class="cover">
+        <h1 class="cover__titles">
+          <span class="cover__title first">оно</span>
+          <span class="cover__title second">тебе</span>
+          <span class="cover__title third">надо</span>
         </h1>
-        <div class="description">
-          <p>Аукцион вещей, в которые никто не верил</p>
-          <button>Сделать ставку</button>
+        <div class="cover__description">
+          <p class="cover__description-text">Аукцион вещей, в которые никто не верил</p>
+          <button class="cover__description-button" href="#0">Сделать ставку</button>
         </div>
+        <div class="overlay"></div>
       </section>
       <section class="lots">
         <h2>Лоты</h2>
@@ -73,7 +76,7 @@
         </div>
       </section>
     </main>
-    <footer class="container footer">
+    <footer class="footer">
       <address>
         <p>+9 999 555 5555</p>
         <p>info@sobaka.ge</p>
